@@ -1,16 +1,24 @@
 @font-face {
-  font-family: 'Handlee';
+  font-family: 'AdobeClean';
   font-style: normal;
   font-weight: 400;
-  src: local('Handlee Regular'), local('Handlee-Regular'), url(handlee.woff) format('woff');
+  src: url('AdobeClean/AdobeClean-Light.otf');
 }
+
+@font-face {
+  font-family: 'AdobeClean';
+  font-style: normal;
+  font-weight: 400;
+  src: url('AdobeClean/AdobeClean-Light.otf');
+}
+
 html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   background: #333;
-  font-family: 'Handlee', helvetica, arial, sans-serif;
+  font-family: 'AdobeClean', helvetica, arial, sans-serif;
 }
 * {
   margin: 0;
@@ -50,7 +58,7 @@ html {
     font-family: helvetica, arial, sans-serif;
   }
   output ul li:first-child {
-    font-family: Handlee;
+    font-family: AdobeClean;
     font-size: 20px;
     float: none;
   }
@@ -61,7 +69,7 @@ html {
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
-    font-family: Handlee;
+    font-family: AdobeClean;
     font-size: 20px;
   }
   output ul button span {
@@ -70,7 +78,7 @@ html {
     padding: 0 0 0 10px;
     margin: 0;
     border: none;
-    font-family: Handlee;
+    font-family: AdobeClean;
     font-size: 20px;
   }
   output span {
@@ -126,7 +134,7 @@ html {
     padding-top: 5px;
   }
   .dragdrop #dropzone {
-    background: #5DA0E3;
+    background: rgba(52,142,232, 1);
     width: 100%;
     height: 100%;
   }

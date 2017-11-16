@@ -186,7 +186,7 @@
       if (!thumbsshown) {
         zipit();
       } else {
-        s.querySelector('p').innerHTML = 'Check out your thumbnails below!';
+        s.querySelector('p').innerHTML = 'Please re-package these as complete submissions';
       }
     }
   }
