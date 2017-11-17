@@ -70,8 +70,8 @@
   }
 
   function grabformvalues() {
-    thumbwidth  = document.querySelector('#width').value;
-    thumbheight = document.querySelector('#height').value;
+    thumbwidth  = 2048;
+    thumbheight = 1424;
     crop = !document.querySelector('#crop').checked;
     background = document.querySelector('#bg').value;
     jpeg  = document.querySelector('#jpeg').value;
@@ -167,7 +167,7 @@
         url = jpeg ? c.toDataURL('image/jpeg', quality) : c.toDataURL();
     thumb.src = url;
     var thumbname = name.split('.');
-    thumbname = thumbname[0] + '_tn.' + (jpeg ? 'jpg' : thumbname[1]);
+    thumbname = 'Thumbnail.jpg';
     thumb.title = thumbname +' ' + Math.round(url.length / 1000 * 100) / 100 + ' KB';
     thumb.setAttribute('data-filename', thumbname);
     // log.innerHTML += '<li>Thumbnail: '+thumbname+' '+'('+Math.round(url.length / 1000 * 100) / 100+'KB)</li>';
@@ -204,9 +204,9 @@
     }
     saveAs(
       zip.generate({type: 'blob'}),
-      'thumbnails.zip'
+      'thumbnail.zip'
     );
-    s.querySelector('p').innerHTML = 'Drag and drop some images here!';
+    s.querySelector('p').innerHTML = 'Drag and drop your Thumbnail image here!';
   }
 
   function resize(imagewidth, imageheight, thumbwidth, thumbheight) {
