@@ -22,27 +22,19 @@
     </ul>
   </nav>
     <section id="options">
+
       <form>
       <canvas id="democanvas"></canvas>
       <fieldset>
-        <legend>Thumbnail options</legend>
-        <label for="width" class="hidden">Width:</label>
-        <input id="width" type="number" name="width" value="100"> &times;
-        <label for="height" class="hidden">Height:</label>
-        <input id="height"  type="number"  name="height" value="100">
-        <input type="checkbox"  checked id="crop"><label for="crop" class="hidden">pad thumbnail</label>
-        <span class="crop"><label for="bg" class="hidden">background:</label><input type="color" value="rgb(256,256,256)" id="bg"></span>
+        <legend>Background Color</legend>
+        <p>Drag and drop some images here!</p>
+        <input type="color" value="rgb(256,256,256)" id="bg"></span>
       </fieldset>
       <fieldset>
         <legend>File format</legend>
         <input type="hidden" id="jpeg" value="1">
-        <span class="jpeg"><label for="quality">Quality</label>
-        <input type="range" max="100" min="0" value="90" id="quality"></span>
-      </fieldset>
-      <span id="previewsize"></span>
-      <div class="preview"></div>
-      <img src="images/penny-awww.jpg" style="display: none" class="demo" alt="fabulous Penelope Pickles">
       </form>
+
     </section> 
     <section id="contact">
       <p>All the work here is done by <a href="http://twitter.com/codepo8">Chris Heilmann</a>, so send him a tweet if you're stuck.</p>
@@ -50,9 +42,6 @@
       <p>Thanks must go to:</p>
       <p><a href=" http://stuk.github.io/jszip/">Stuart Knightley for JSZip</a> , <a href="https://github.com/eligrey/FileSaver.js">Eli Grey for FileSaver</a>, <a href="https://plus.google.com/115540960342941034012/about">Joe Prince</a> for the <a href="http://www.google.com/fonts/specimen/Handlee">Handlee font</a> and GitHub for <a href="https://octicons.github.com/">Octicons</a>.
       </p>
-      <p>Demo thumbnail photo model: <a href="https://www.facebook.com/pages/Penelope-Pickles/102583083404">Penelope Pickles</a>.</p>
-      <p>Now go and <a href="#dropzone">create some thumbnails</a>.</p>
-    </section> 
   </div>
   <output>
     <ul id="thumbslist"></ul>
