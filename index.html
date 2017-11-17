@@ -10,15 +10,18 @@
 <body>
   <h1>Adobe Stock Production Images</h1>
   <div id="mainapp">
-  <section id="dropzone">
+  <section class="preview" id="dropzone">
+    <p>Checking your browser…</p>
+  </section>
+  <section class="preview" id="dropzone">
     <p>Checking your browser…</p>
   </section>
   <nav>
     <ul>
       <li><a class="mega-octicon octicon-home" title="home" href="#dropzone"><span>Create Thumbnail</span></a></li>
-      <li><a class="mega-octicon octicon-home" title="home" href="#dropzone"><span>Create Preview</span></a></li>
+      <li><a class="mega-octicon octicon-home" title="home" href="#"><span>Create Preview (coming soon)</span></a></li>
       <li><a class="mega-octicon octicon-tools" title="settings" href="#options"><span>Set options</span></a></li>
-      <li><a class="mega-octicon octicon-info" title="help" href="#help"><span>Specs</span></a></li>
+      <li><a class="mega-octicon octicon-info" title="specs" href="https://helpx.adobe.com/stock/contributor/help/design-template-requirements.html" target="new"><span>Template Specs</span></a></li>
     </ul>
   </nav>
     <section id="options">
@@ -27,7 +30,7 @@
       <canvas id="democanvas"></canvas>
       <fieldset>
         <legend>Background Color</legend>
-        <p>Drag and drop some images here!</p>
+        <p>Select your background color</p>
         <input type="color" value="rgb(256,256,256)" id="bg"></span>
       </fieldset>
       <fieldset>
