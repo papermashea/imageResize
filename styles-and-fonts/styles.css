@@ -181,7 +181,7 @@ html {
     width: 50px;
     text-align: center;
     height: 50px;
-    color: #fff;
+    color: #000;
     position: relative;
   }
   nav a.active {
