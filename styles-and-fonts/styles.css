@@ -17,7 +17,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #333;
+  background: #fff;
   font-family: 'AdobeClean', helvetica, arial, sans-serif;
 }
 * {
@@ -148,10 +148,9 @@ html {
     font-weight: normal;
     font-size: 24px;
     text-align: center;
-    color: #ffc;
+    color: #000;
     margin-left: -200px;
-    background: #fc6;
-    background: #333;
+    background: #fff;
     z-index: 2;
   }
   #mainapp {
